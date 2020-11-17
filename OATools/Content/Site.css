@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #14D3DB;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.navColor {
+    background: #DB7635;color: 
+}
+
+.navText {
+    color: #2d2f30;
+}
+
+    .navText:hover {
+        color: #6a6f75;
+    }
+
+/*
+    https://color.adobe.com/create/color-wheel
+    royal blue:#3B2ADB
+    orange:#DB7635 - navbar
+    blue: #1F70DB
+    yellow:#DBBD09
+    teal: #14D3DB - background
+*/
