@@ -1,17 +1,17 @@
-﻿<nav class="navbar navbar-expand-lg navColor">
-    @Html.ActionLink("Working my Program!", "Index", "Home", new
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    @Html.ActionLink("Workin' my Program!", "Index", "Home", new
     { area = "" }, new { @class = "navbar-brand title navText" })
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon navText"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor02" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new
-                                     { area = "" }, new { @class = "navbar-brand navText" })</li>
-            <li class="nav-item">@Html.ActionLink("About", "About", "Home", new
-                                     { area = "" }, new { @class = "navbar-brand navText" })</li>
+                                     { area = "" }, new { @class = "navbar-brand" })</li>
+            <li class="nav-item">@Html.ActionLink("Twelve Step Prayers", "Index", "Prayers", new
+                                     { area = "" }, new { @class = "navbar-brand" })</li>
             <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new
-                                     { area = "" }, new { @class = "navbar-brand navText" })</li>
+                                     { area = "" }, new { @class = "navbar-brand" })</li>
         </ul>
 
         @Html.Partial("_LoginPartial")

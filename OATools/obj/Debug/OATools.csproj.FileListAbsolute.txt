@@ -86,3 +86,6 @@ C:\Users\mspalione\source\repos\OATools\OATools\bin\roslyn\System.Buffers.dll
 C:\Users\mspalione\source\repos\OATools\OATools\bin\roslyn\System.Memory.dll
 C:\Users\mspalione\source\repos\OATools\OATools\bin\roslyn\System.Numerics.Vectors.dll
 C:\Users\mspalione\source\repos\OATools\OATools\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.InitialCreate.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.csproj.GenerateResource.cache
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.PrayersTable.resources

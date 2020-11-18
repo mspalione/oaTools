@@ -1,0 +1,43 @@
+﻿@model IEnumerable<OATools.Models.Prayer>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Twelve Step Prayers</h2>
+
+<div class="container-fluid">
+    <div class="row">
+    @foreach (var p in Model)
+    {
+        <div class="card bg-primary text-white mb-3 col-md-3 mr-3 modalHover" style="max-width: 20rem;" data-toggle="modal" data-target="#exampleModal@(p.Id)">
+            <div class="card-body text-center">
+                <h4 class="card-title">@p.Name</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        @Html.Partial("_ModalPopUp", new ViewDataDictionary {{"prayer", p}})
+
+
+    }
+</div>
+    
+</div>
+
+
+
+
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function() {
+            $("#prayers").DataTable();
+
+            //$("table > tbody tr:even").addClass("table-success");
+            //$("table > tbody tr:odd").addClass("table-secondary");
+        })
+    </script>
+}
