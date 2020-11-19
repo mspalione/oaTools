@@ -35,6 +35,10 @@ textarea {
     color: black;
 }
 
+.paddedBtn {
+    padding: 10px;
+}
+
 /*
     https://color.adobe.com/create/color-wheel
     compound first color

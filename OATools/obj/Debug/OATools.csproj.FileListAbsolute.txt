@@ -89,3 +89,8 @@ C:\Users\mspalione\source\repos\OATools\OATools\bin\roslyn\System.Runtime.Compil
 C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.InitialCreate.resources
 C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.csproj.GenerateResource.cache
 C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.PrayersTable.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.FreePdfLinks.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.FreePdfLinksAddBookTableColumn.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.SeedFreePdfLinksAddBookTableColumn.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.FreePdfBookTitles.resources
+C:\Users\mspalione\source\repos\OATools\OATools\obj\Debug\OATools.Migrations.SeedFreePdfBookTitles.resources

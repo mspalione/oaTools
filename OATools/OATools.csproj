@@ -187,13 +187,36 @@
     <Compile Include="Migrations\202011171608369_PrayersTable.designer.cs">
       <DependentUpon>202011171608369_PrayersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011190026520_FreePdfLinks.cs" />
+    <Compile Include="Migrations\202011190026520_FreePdfLinks.designer.cs">
+      <DependentUpon>202011190026520_FreePdfLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011190059504_FreePdfLinksAddBookTableColumn.cs" />
+    <Compile Include="Migrations\202011190059504_FreePdfLinksAddBookTableColumn.designer.cs">
+      <DependentUpon>202011190059504_FreePdfLinksAddBookTableColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011190100453_SeedFreePdfLinksAddBookTableColumn.cs" />
+    <Compile Include="Migrations\202011190100453_SeedFreePdfLinksAddBookTableColumn.designer.cs">
+      <DependentUpon>202011190100453_SeedFreePdfLinksAddBookTableColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011190112584_FreePdfBookTitles.cs" />
+    <Compile Include="Migrations\202011190112584_FreePdfBookTitles.designer.cs">
+      <DependentUpon>202011190112584_FreePdfBookTitles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011190125179_SeedFreePdfBookTitles.cs" />
+    <Compile Include="Migrations\202011190125179_SeedFreePdfBookTitles.designer.cs">
+      <DependentUpon>202011190125179_SeedFreePdfBookTitles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FreePdfBookTitle.cs" />
+    <Compile Include="Models\FreePdfLink.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Prayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\HomePageViewModel.cs" />
     <Compile Include="ViewModel\PrayersViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -615,6 +638,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011171608369_PrayersTable.resx">
       <DependentUpon>202011171608369_PrayersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011190026520_FreePdfLinks.resx">
+      <DependentUpon>202011190026520_FreePdfLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011190059504_FreePdfLinksAddBookTableColumn.resx">
+      <DependentUpon>202011190059504_FreePdfLinksAddBookTableColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011190100453_SeedFreePdfLinksAddBookTableColumn.resx">
+      <DependentUpon>202011190100453_SeedFreePdfLinksAddBookTableColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011190112584_FreePdfBookTitles.resx">
+      <DependentUpon>202011190112584_FreePdfBookTitles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011190125179_SeedFreePdfBookTitles.resx">
+      <DependentUpon>202011190125179_SeedFreePdfBookTitles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

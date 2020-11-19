@@ -1,22 +1,44 @@
-﻿@{
+﻿@model OATools.ViewModel.HomePageViewModel
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Addiction Recovery: one day at a time.</h1>
+    <p class="lead">Twelve Step Recovery tools and resources, all in one place, to get you 24 more hours.</p>
+    <p class="lead">And now you never have to do anything alone, ever again.</p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h2>Reading Links</h2>
+        <p>to free online readings of The Big Book and the Alcoholics Anonymous Daily Reflections</p>
+        @foreach (var book in Model.BookTitles)
+        {
+            <div class="paddedBtn">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#links@(book.Id)">
+                    @book.BookTitle
+                </button>
+            </div>
+            <br/>
+            <div class="modal" id="links@(book.Id)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            @foreach (var link in Model.PdfLinks.Where(l => l.BookTitle == @book.BookTitle))
+                            {
+                                <p><a class="btn btn-primary btn-lg btn-block" href="@link.Url" target="_blank">@link.Name</a></p>
+                            }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        
+        
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
