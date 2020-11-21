@@ -28,6 +28,9 @@ namespace OATools.Models
         public DbSet<Tradition> Traditions { get; set; }
         public DbSet<Tool> Tools { get; set; }
         public DbSet<Program> Programs { get; set; }
+        public DbSet<Step> Steps { get; set; }
+        public DbSet<Principle> Principles { get; set; }
+        public DbSet<NeutralResponse> NeutralResponses { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

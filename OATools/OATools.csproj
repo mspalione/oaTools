@@ -239,16 +239,55 @@
     <Compile Include="Migrations\202011211634157_SeedProgramTable.designer.cs">
       <DependentUpon>202011211634157_SeedProgramTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011212024499_MoreDataForProgramTable.cs" />
+    <Compile Include="Migrations\202011212024499_MoreDataForProgramTable.designer.cs">
+      <DependentUpon>202011212024499_MoreDataForProgramTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212039015_StepsTable.cs" />
+    <Compile Include="Migrations\202011212039015_StepsTable.designer.cs">
+      <DependentUpon>202011212039015_StepsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212039430_StepsTableData.cs" />
+    <Compile Include="Migrations\202011212039430_StepsTableData.designer.cs">
+      <DependentUpon>202011212039430_StepsTableData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212051586_PrinciplesTable.cs" />
+    <Compile Include="Migrations\202011212051586_PrinciplesTable.designer.cs">
+      <DependentUpon>202011212051586_PrinciplesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212052507_SeedPrinciplesTable.cs" />
+    <Compile Include="Migrations\202011212052507_SeedPrinciplesTable.designer.cs">
+      <DependentUpon>202011212052507_SeedPrinciplesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212111270_NeutralResponsesTable.cs" />
+    <Compile Include="Migrations\202011212111270_NeutralResponsesTable.designer.cs">
+      <DependentUpon>202011212111270_NeutralResponsesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212112525_NeutralResponsesTableProgramColumnAdded.cs" />
+    <Compile Include="Migrations\202011212112525_NeutralResponsesTableProgramColumnAdded.designer.cs">
+      <DependentUpon>202011212112525_NeutralResponsesTableProgramColumnAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212114063_SeedNeutralResponsesTable.cs" />
+    <Compile Include="Migrations\202011212114063_SeedNeutralResponsesTable.designer.cs">
+      <DependentUpon>202011212114063_SeedNeutralResponsesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011212119072_MoreDataForNeutralResponsesTable.cs" />
+    <Compile Include="Migrations\202011212119072_MoreDataForNeutralResponsesTable.designer.cs">
+      <DependentUpon>202011212119072_MoreDataForNeutralResponsesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FreePdfBookTitle.cs" />
     <Compile Include="Models\FreePdfLink.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NeutralResponse.cs" />
     <Compile Include="Models\Prayer.cs" />
+    <Compile Include="Models\Principle.cs" />
     <Compile Include="Models\Program.cs" />
     <Compile Include="Models\Promise.cs" />
     <Compile Include="Models\Slogan.cs" />
+    <Compile Include="Models\Step.cs" />
     <Compile Include="Models\Tool.cs" />
     <Compile Include="Models\Tradition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -714,6 +753,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011211634157_SeedProgramTable.resx">
       <DependentUpon>202011211634157_SeedProgramTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212024499_MoreDataForProgramTable.resx">
+      <DependentUpon>202011212024499_MoreDataForProgramTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212039015_StepsTable.resx">
+      <DependentUpon>202011212039015_StepsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212039430_StepsTableData.resx">
+      <DependentUpon>202011212039430_StepsTableData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212051586_PrinciplesTable.resx">
+      <DependentUpon>202011212051586_PrinciplesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212052507_SeedPrinciplesTable.resx">
+      <DependentUpon>202011212052507_SeedPrinciplesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212111270_NeutralResponsesTable.resx">
+      <DependentUpon>202011212111270_NeutralResponsesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212112525_NeutralResponsesTableProgramColumnAdded.resx">
+      <DependentUpon>202011212112525_NeutralResponsesTableProgramColumnAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212114063_SeedNeutralResponsesTable.resx">
+      <DependentUpon>202011212114063_SeedNeutralResponsesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011212119072_MoreDataForNeutralResponsesTable.resx">
+      <DependentUpon>202011212119072_MoreDataForNeutralResponsesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

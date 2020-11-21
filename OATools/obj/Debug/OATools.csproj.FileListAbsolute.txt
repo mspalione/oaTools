@@ -198,3 +198,12 @@ C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ToolsTa
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ProgramsTable.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ProgramsTableRefInToolsTable.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedProgramTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.MoreDataForProgramTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.StepsTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.StepsTableData.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.PrinciplesTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedPrinciplesTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.NeutralResponsesTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.NeutralResponsesTableProgramColumnAdded.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedNeutralResponsesTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.MoreDataForNeutralResponsesTable.resources
