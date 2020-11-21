@@ -1,8 +1,8 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace OATools.Models
 {
@@ -23,6 +23,11 @@ namespace OATools.Models
         public DbSet<Prayer> Prayers { get; set; }
         public DbSet<FreePdfLink> FreePdfLinks { get; set; }
         public DbSet<FreePdfBookTitle> FreePdfBookTitles { get; set; }
+        public DbSet<Slogan> Slogans { get; set; }
+        public DbSet<Promise> Promises { get; set; }
+        public DbSet<Tradition> Traditions { get; set; }
+        public DbSet<Tool> Tools { get; set; }
+        public DbSet<Program> Programs { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
