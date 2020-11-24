@@ -1,7 +1,10 @@
 ﻿@model OATools.ViewModel.HomePageViewModel
+    @using OATools.Helpers 
 @{
     ViewBag.Title = "Home Page";
 }
+
+<br />
 
 <div class="jumbotron">
     <h1>Addiction Recovery: one day at a time.</h1>
@@ -9,45 +12,92 @@
     <p class="lead">You never have to do anything alone, ever again.</p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Reading Links</h2>
-        <p>to free online readings of The Big Book and the Alcoholics Anonymous Daily Reflections</p>
-        @foreach (var book in Model.BookTitles)
-        {
-            <div class="paddedBtn">
-                <button class="btn btn-secondary" data-toggle="modal" data-target="#links@(book.Id)">
-                    @book.BookTitle
-                </button>
-            </div>
-            <br/>
-            <div class="modal" id="links@(book.Id)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            @foreach (var link in Model.PdfLinks.Where(l => l.BookTitle == @book.BookTitle))
-                            {
-                                <p><a class="btn btn-primary btn-lg btn-block" href="@link.Url" target="_blank">@link.Name</a></p>
-                            }
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<br />
+
+@{
+    
+    Random rnd = new Random();
+    var sloganList = Model.Slogans.ToList();
+    var index = rnd.Next(sloganList.Count);
+    var currentSlogan = sloganList[index];
+}
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Reading Links</h2>
+            <p>to free online readings of The Big Book and the Alcoholics Anonymous Daily Reflections</p>
+            @foreach (var book in Model.BookTitles)
+            {
+                <div class="paddedBtn">
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#links@(book.Id)">
+                        @book.BookTitle
+                    </button>
+                </div>
+                <br />
+                <div class="modal" id="links@(book.Id)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                @foreach (var link in Model.PdfLinks.Where(l => l.BookTitle == @book.BookTitle))
+                                {
+                                    <p><a class="btn btn-primary btn-lg btn-block" href="@link.Url" target="_blank">@link.Name</a></p>
+                                }
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            }
+        </div>
+        <div class="col-md-4">
+            @*@Html.Partial("_Slogans", new ViewDataDictionary { { "s", sloganList } })*@
+            
+            <div id="slogan" class="card text-white bg-primary mb-3 modalHover" style="max-width: 20rem;" onclick="GetValue()">
+                <div class="card-header">Click anywhere in the box to see more slogans.</div>
+                <div class="card-body">
+                    <h4 class="card-title">@currentSlogan.SloganText</h4>
+                    <p>@currentSlogan.AffiliatedProgram</p>
+                </div>
             </div>
-        }
-        
-        
+
+            <div class="text-muted">
+                Click here for a full list of slogans.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let sloganArray = new Array;
+            @foreach(var s in sloganList)
+            {
+                @:sloganArray.push(SloganText: @s.SloganText);
+            }
+            console.log(sloganArray);
+        })
+        //function GetValue() {
+        //    let pleasework = '';
+        //    debugger
+        //    for (var p in pleasework) {
+        //        console.log(p.SloganText)
+        //    }
+        //}
+    </script>
+}
+    

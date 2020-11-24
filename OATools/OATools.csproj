@@ -179,6 +179,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\SloganExtentions.cs" />
     <Compile Include="Migrations\202011162221587_InitialCreate.cs" />
     <Compile Include="Migrations\202011162221587_InitialCreate.designer.cs">
       <DependentUpon>202011162221587_InitialCreate.cs</DependentUpon>
@@ -693,6 +694,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Prayers\Index.cshtml" />
     <Content Include="Views\Prayers\_ModalPopUp.cshtml" />
+    <Content Include="Views\Home\_Slogans.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

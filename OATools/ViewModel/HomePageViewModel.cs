@@ -1,8 +1,5 @@
-﻿using System;
+﻿using OATools.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using OATools.Models;
 
 namespace OATools.ViewModel
 {
@@ -10,5 +7,6 @@ namespace OATools.ViewModel
     {
         public IEnumerable<FreePdfBookTitle> BookTitles { get; set; }
         public IEnumerable<FreePdfLink> PdfLinks { get; set; }
+        public IEnumerable<Slogan> Slogans { get; set; }
     }
 }
