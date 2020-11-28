@@ -207,3 +207,5 @@ C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.Neutral
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.NeutralResponsesTableProgramColumnAdded.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedNeutralResponsesTable.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.MoreDataForNeutralResponsesTable.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.Gratitudes.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.GratitudesDateColumn.resources

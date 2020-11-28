@@ -64,17 +64,17 @@
             
             
             <div id="slogan" class="card text-white bg-primary mb-3 modalHover" style="max-width: 20rem; min-height: 270px;" onclick="GetSlogan()">
-                           
-                <div class="card-header">Click anywhere in the box to see more slogans.</div>
-        <div class="card-body">
-            <h4 id="currentSlogan" class="card-title">@currentSlogan.SloganText</h4>
-            <p id="program">@currentSlogan.AffiliatedProgram</p>
-        </div>
+
+                <div class="card-header">Click anywhere in the box to see another slogan.</div>
+                <div class="card-body">
+                    <h4 id="currentSlogan" class="card-title">@currentSlogan.SloganText</h4>
+                    <p id="program">@currentSlogan.AffiliatedProgram</p>
+                </div>
+                <div class="card-footer">
+                    @Html.ActionLink("Click here for a full list of slogans.", "Slogans", "Home")
+                </div>
             </div>
 
-            <div class="text-muted">
-                @Html.ActionLink("Click here for a full list of slogans.", "AllSlogans", "Home")
-            </div>
         </div>
         <div class="col-md-4">
             <h2>Web Hosting</h2>

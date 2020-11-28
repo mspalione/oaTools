@@ -31,6 +31,7 @@ namespace OATools.Models
         public DbSet<Step> Steps { get; set; }
         public DbSet<Principle> Principles { get; set; }
         public DbSet<NeutralResponse> NeutralResponses { get; set; }
+        public DbSet<Gratitude> Gratitudes { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

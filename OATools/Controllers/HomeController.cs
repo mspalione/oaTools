@@ -32,10 +32,10 @@ namespace OATools.Controllers
             return View(model);
         }
 
-        public ActionResult AllSlogans()
+        public ActionResult Slogans()
         {
             var slogans = _context.Slogans.ToList();
-            return View("Slogans", slogans);
+            return View(slogans);
         }
     }
 }

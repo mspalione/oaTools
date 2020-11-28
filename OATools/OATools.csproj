@@ -172,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GratitudeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PrayersController.cs" />
@@ -274,10 +275,19 @@
     <Compile Include="Migrations\202011212119072_MoreDataForNeutralResponsesTable.designer.cs">
       <DependentUpon>202011212119072_MoreDataForNeutralResponsesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011282242562_Gratitudes.cs" />
+    <Compile Include="Migrations\202011282242562_Gratitudes.Designer.cs">
+      <DependentUpon>202011282242562_Gratitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011282304586_GratitudesDateColumn.cs" />
+    <Compile Include="Migrations\202011282304586_GratitudesDateColumn.Designer.cs">
+      <DependentUpon>202011282304586_GratitudesDateColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FreePdfBookTitle.cs" />
     <Compile Include="Models\FreePdfLink.cs" />
+    <Compile Include="Models\Gratitude.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NeutralResponse.cs" />
@@ -693,6 +703,7 @@
     <Content Include="Views\Prayers\Index.cshtml" />
     <Content Include="Views\Prayers\_ModalPopUp.cshtml" />
     <Content Include="Views\Home\Slogans.cshtml" />
+    <Content Include="Views\Gratitude\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -780,6 +791,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011212119072_MoreDataForNeutralResponsesTable.resx">
       <DependentUpon>202011212119072_MoreDataForNeutralResponsesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011282242562_Gratitudes.resx">
+      <DependentUpon>202011282242562_Gratitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011282304586_GratitudesDateColumn.resx">
+      <DependentUpon>202011282304586_GratitudesDateColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
