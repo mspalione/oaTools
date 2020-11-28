@@ -1,7 +1,5 @@
 ﻿using OATools.Models;
 using OATools.ViewModel;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -34,13 +32,10 @@ namespace OATools.Controllers
             return View(model);
         }
 
-        public ActionResult RenderRandomSlogan(List<Slogan> slogans, int currentSloganIndex)
+        public ActionResult AllSlogans()
         {
-            slogans.RemoveAt(currentSloganIndex);
-            Random rnd = new Random();
-            var index = rnd.Next(slogans.Count);
-            var currentSlogan = slogans[index];
-            return PartialView("_Slogans", currentSlogan);
+            var slogans = _context.Slogans.ToList();
+            return View("Slogans", slogans);
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿@model OATools.ViewModel.HomePageViewModel
-    @using OATools.Helpers 
+    @using OATools.Models 
 @{
     ViewBag.Title = "Home Page";
 }
@@ -15,11 +15,13 @@
 <br />
 
 @{
+        Random rnd = new Random();
+        var sloganList = Model.Slogans.ToList();
+        var index = rnd.Next(sloganList.Count);
+        var currentSlogan = sloganList[index];
     
-    Random rnd = new Random();
-    var sloganList = Model.Slogans.ToList();
-    var index = rnd.Next(sloganList.Count);
-    var currentSlogan = sloganList[index];
+
+
 }
 
 
@@ -59,18 +61,19 @@
             }
         </div>
         <div class="col-md-4">
-            @*@Html.Partial("_Slogans", new ViewDataDictionary { { "s", sloganList } })*@
             
-            <div id="slogan" class="card text-white bg-primary mb-3 modalHover" style="max-width: 20rem;" onclick="GetValue()">
+            
+            <div id="slogan" class="card text-white bg-primary mb-3 modalHover" style="max-width: 20rem; min-height: 270px;" onclick="GetSlogan()">
+                           
                 <div class="card-header">Click anywhere in the box to see more slogans.</div>
-                <div class="card-body">
-                    <h4 class="card-title">@currentSlogan.SloganText</h4>
-                    <p>@currentSlogan.AffiliatedProgram</p>
-                </div>
+        <div class="card-body">
+            <h4 id="currentSlogan" class="card-title">@currentSlogan.SloganText</h4>
+            <p id="program">@currentSlogan.AffiliatedProgram</p>
+        </div>
             </div>
 
             <div class="text-muted">
-                Click here for a full list of slogans.
+                @Html.ActionLink("Click here for a full list of slogans.", "AllSlogans", "Home")
             </div>
         </div>
         <div class="col-md-4">
@@ -83,21 +86,18 @@
 @section scripts
 {
     <script>
-        $(document).ready(function () {
-            let sloganArray = new Array;
-            @foreach(var s in sloganList)
-            {
-                @:sloganArray.push(SloganText: @s.SloganText);
-            }
-            console.log(sloganArray);
-        })
-        //function GetValue() {
-        //    let pleasework = '';
-        //    debugger
-        //    for (var p in pleasework) {
-        //        console.log(p.SloganText)
-        //    }
-        //}
+        function GetSlogan() {
+            let sloganList = @Html.Raw(Json.Encode(Model.Slogans));
+            let index = '@index';
+
+            let length = sloganList.length;
+            let newIndex = Math.floor(Math.random() * length);
+
+            document.getElementById("currentSlogan").innerHTML = sloganList[newIndex].SloganText;
+
+            if (sloganList[newIndex].AffiliatedPrgram) 
+                document.getElementById("program").innerHTML = sloganList[newIndex].AffiliatedPrgram;
+        }
     </script>
 }
     
