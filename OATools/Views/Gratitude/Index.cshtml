@@ -1,54 +1,49 @@
-﻿@model OATools.Models.Gratitude
+﻿@model OATools.ViewModel.GratitudeViewModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Practice Gratitude";
 }
 
 <h2>Practice Gratitude</h2>
 
-<h4>Today I'm Grateful For ...</h4>
+<!-- Modal -->
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#gratitude">Submit your Gratitude</button>
+@Html.Partial("_ModalAddGratitude")
 
-@using (Html.BeginForm("New", "Gratitude"))
-{
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat1)
-        @Html.TextBoxFor(m => m.Grat1, new { @class = "form-control" })
+<br />
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var grat in Model.Gratitudes)
+        {
+            var list = new List<string>();
+            if (!String.IsNullOrEmpty(@grat.Grat1)) { list.Add(@grat.Grat1); }
+            if (!String.IsNullOrEmpty(@grat.Grat2)) { list.Add(@grat.Grat2); }
+            if (!String.IsNullOrEmpty(@grat.Grat3)) { list.Add(@grat.Grat3); }
+            if (!String.IsNullOrEmpty(@grat.Grat4)) { list.Add(@grat.Grat4); }
+            if (!String.IsNullOrEmpty(@grat.Grat5)) { list.Add(@grat.Grat5); }
+            if (!String.IsNullOrEmpty(@grat.Grat6)) { list.Add(@grat.Grat6); }
+            if (!String.IsNullOrEmpty(@grat.Grat7)) { list.Add(@grat.Grat7); }
+            if (!String.IsNullOrEmpty(@grat.Grat8)) { list.Add(@grat.Grat8); }
+            if (!String.IsNullOrEmpty(@grat.Grat9)) { list.Add(@grat.Grat9); }
+            if (!String.IsNullOrEmpty(@grat.Grat10)) { list.Add(@grat.Grat10); }
+
+
+
+
+            <div class="card text-white bg-primary mb-3 col-md-3 mr-3" style="max-width: 20rem;">
+                <div class="card-header">@grat.Date.ToShortDateString()</div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <ol>
+                            @foreach (var item in list)
+                            {
+                                <li>@item</li>
+                            }
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        }
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat2)
-        @Html.TextBoxFor(m => m.Grat2, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat3)
-        @Html.TextBoxFor(m => m.Grat3, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat4)
-        @Html.TextBoxFor(m => m.Grat4, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat5)
-        @Html.TextBoxFor(m => m.Grat5, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat6)
-        @Html.TextBoxFor(m => m.Grat6, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat7)
-        @Html.TextBoxFor(m => m.Grat7, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat8)
-        @Html.TextBoxFor(m => m.Grat8, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat9)
-        @Html.TextBoxFor(m => m.Grat9, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Grat10)
-        @Html.TextBoxFor(m => m.Grat10, new { @class = "form-control" })
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-}
+</div>

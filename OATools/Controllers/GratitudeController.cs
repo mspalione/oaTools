@@ -1,12 +1,14 @@
 ﻿using OATools.Models;
+using OATools.ViewModel;
 using System;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace OATools.Controllers
 {
     public class GratitudeController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public GratitudeController()
         {
@@ -21,7 +23,12 @@ namespace OATools.Controllers
         // GET: Gratitude
         public ActionResult Index()
         {
-            return View();
+            var gratitudes = new GratitudeViewModel
+            {
+                Gratitudes = _context.Gratitudes.ToList()
+            };
+
+            return View(gratitudes);
         }
 
         [HttpPost]

@@ -1,0 +1,64 @@
+﻿@model OATools.ViewModel.GratitudeViewModel
+
+<div class="modal" id="gratitude" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Today I'm Grateful For ...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("New", "Gratitude"))
+                {
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat1)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat1, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat2)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat2, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat3)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat3, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat4)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat4, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat5)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat5, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat6)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat6, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat7)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat7, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat8)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat8, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat9)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat9, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Gratitude.Grat10)
+                        @Html.TextBoxFor(m => m.Gratitude.Grat10, new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
