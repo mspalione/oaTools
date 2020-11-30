@@ -25,7 +25,7 @@ namespace OATools.Controllers
         {
             var gratitudes = new GratitudeViewModel
             {
-                Gratitudes = _context.Gratitudes.ToList()
+                Gratitudes = _context.Gratitudes.AsEnumerable().Reverse().Take(100).ToList()
             };
 
             return View(gratitudes);

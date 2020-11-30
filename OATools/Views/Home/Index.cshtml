@@ -19,11 +19,7 @@
         var sloganList = Model.Slogans.ToList();
         var index = rnd.Next(sloganList.Count);
         var currentSlogan = sloganList[index];
-    
-
-
 }
-
 
 
     <div class="row">
@@ -76,10 +72,113 @@
             </div>
 
         </div>
+
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+            <div class="paddedBtn">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#steps">
+                    Twelve Steps
+                </button>
+            </div>
+            <br />
+            <div class="modal" id="steps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            @foreach (var step in Model.Steps)
+                            {
+                                <h4>@step.StepNumber - @step.StepText</h4>
+                            }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paddedBtn">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#traditions">
+                    Twelve Traditions
+                </button>
+            </div>
+            <br />
+            <div class="modal" id="traditions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            @foreach (var step in Model.Traditions)
+                            {
+                                <h4>@step.TraditionNumber - @step.TraditionText</h4>
+                                <p>@step.TraditionSummary</p>
+                            }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paddedBtn">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#promise">
+                    Twelve Promises
+                </button>
+            </div>
+            <br />
+            <div class="modal" id="promise" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            @foreach (var step in Model.Promises)
+                            {
+                                <h4>@step.PromiseNumber - @step.PromiseText</h4>
+                            }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paddedBtn">
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#principle">
+                    Twelve Principles
+                </button>
+            </div>
+            <br />
+            <div class="modal" id="principle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            @foreach (var step in Model.Principles)
+                            {
+                                <h4>@step.StepId - @step.Virtue</h4>
+                            }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

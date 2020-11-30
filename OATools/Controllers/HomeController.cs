@@ -26,7 +26,11 @@ namespace OATools.Controllers
             {
                 BookTitles = _context.FreePdfBookTitles.ToList(),
                 PdfLinks = _context.FreePdfLinks.ToList(),
-                Slogans = _context.Slogans.ToList()
+                Slogans = _context.Slogans.ToList(),
+                Steps = _context.Steps.ToList(),
+                Traditions = _context.Traditions.ToList(),
+                Promises = _context.Promises.ToList(),
+                Principles = _context.Principles.ToList()
             };
 
             return View(model);
