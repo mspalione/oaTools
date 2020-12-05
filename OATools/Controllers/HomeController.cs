@@ -39,7 +39,32 @@ namespace OATools.Controllers
         public ActionResult Slogans()
         {
             var slogans = _context.Slogans.ToList();
-            return View(slogans);
+            var viewmodel = new SlogansViewModel
+            {
+                Slogans = slogans
+            };
+
+            return View(viewmodel);
+        }
+
+        [HttpPost]
+        public ActionResult AddSlogan(Slogan slogan)
+        {
+            if (!ModelState.IsValid)
+            {
+                var viewmodel = new SlogansViewModel
+                {
+                    Slogan = slogan,
+                    Slogans = _context.Slogans.ToList()
+                };
+
+                return View("Slogans", viewmodel);
+            }
+
+            _context.Slogans.Add(slogan);
+            _context.SaveChanges();
+
+            return RedirectToAction("Slogans", "Home");
         }
     }
 }

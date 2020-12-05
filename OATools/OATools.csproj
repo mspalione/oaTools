@@ -283,6 +283,10 @@
     <Compile Include="Migrations\202011282304586_GratitudesDateColumn.Designer.cs">
       <DependentUpon>202011282304586_GratitudesDateColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012052251481_UpdateSloganModel.cs" />
+    <Compile Include="Migrations\202012052251481_UpdateSloganModel.Designer.cs">
+      <DependentUpon>202012052251481_UpdateSloganModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FreePdfBookTitle.cs" />
@@ -304,6 +308,7 @@
     <Compile Include="ViewModel\GratitudeViewModel.cs" />
     <Compile Include="ViewModel\HomePageViewModel.cs" />
     <Compile Include="ViewModel\PrayersViewModel.cs" />
+    <Compile Include="ViewModel\SlogansViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-flatly.css" />
@@ -799,6 +804,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011282304586_GratitudesDateColumn.resx">
       <DependentUpon>202011282304586_GratitudesDateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012052251481_UpdateSloganModel.resx">
+      <DependentUpon>202012052251481_UpdateSloganModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

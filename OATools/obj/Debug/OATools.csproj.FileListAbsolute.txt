@@ -209,3 +209,4 @@ C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedNeu
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.MoreDataForNeutralResponsesTable.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.Gratitudes.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.GratitudesDateColumn.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.UpdateSloganModel.resources
