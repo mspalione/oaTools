@@ -320,6 +320,14 @@
     <Compile Include="Migrations\202012070026244_SeedToolkit.Designer.cs">
       <DependentUpon>202012070026244_SeedToolkit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012071145283_ChangeToolkitColumnName.cs" />
+    <Compile Include="Migrations\202012071145283_ChangeToolkitColumnName.Designer.cs">
+      <DependentUpon>202012071145283_ChangeToolkitColumnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012071147074_InsertToolkitTimedBitchLetterViewName.cs" />
+    <Compile Include="Migrations\202012071147074_InsertToolkitTimedBitchLetterViewName.Designer.cs">
+      <DependentUpon>202012071147074_InsertToolkitTimedBitchLetterViewName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FreePdfBookTitle.cs" />
@@ -748,7 +756,7 @@
     <Content Include="Views\Gratitude\Index.cshtml" />
     <Content Include="Views\Gratitude\_ModalAddGratitude.cshtml" />
     <Content Include="Views\Toolkit\Index.cshtml" />
-    <Content Include="Views\Toolkit\_TimedBitchLetter.cshtml" />
+    <Content Include="Views\Toolkit\TimedBitchLetter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -870,6 +878,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012070026244_SeedToolkit.resx">
       <DependentUpon>202012070026244_SeedToolkit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012071145283_ChangeToolkitColumnName.resx">
+      <DependentUpon>202012071145283_ChangeToolkitColumnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012071147074_InsertToolkitTimedBitchLetterViewName.resx">
+      <DependentUpon>202012071147074_InsertToolkitTimedBitchLetterViewName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

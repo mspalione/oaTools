@@ -218,3 +218,5 @@ C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.TimedBi
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ToolkitModel.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.UpdateToolkit.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedToolkit.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ChangeToolkitColumnName.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.InsertToolkitTimedBitchLetterViewName.resources

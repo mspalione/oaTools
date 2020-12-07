@@ -30,5 +30,11 @@ namespace OATools.Controllers
 
             return View(viewmodel);
         }
+
+        [Route("Toolkit/TimedBitchLetter")]
+        public ActionResult TimedBitchLetter()
+        {
+            return View();
+        }
     }
 }

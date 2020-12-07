@@ -11,7 +11,10 @@ namespace OATools.Models
         public string Subject { get; set; }
 
         [Required]
+        [Display(Name = "Do Your B*tching")]
         public string Bitching { get; set; }
+
+        [Display(Name = "God's Response")]
         public string GodsResponse { get; set; }
     }
 }

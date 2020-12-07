@@ -5,19 +5,21 @@
 }
 
 <h2>Your Recovery Toolkit</h2>
-
-A collection of tools to aide your recovery.
+<div style="padding: 10px;">
+    <h4>A collection of tools to aide your recovery. Click on the tool name to see tool details.</h4>
+</div>
 
 @foreach (var t in Model.Toolkit)
 {
     <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-        <div class="card-header">@t.Name</div>
-        <div class="card-body">
+        <div class="card-header modalHover" data-target="#instructions" data-toggle="collapse">@t.Name</div>
+        <div id="instructions" class="card-body collapse">
             <p class="card-text">@t.Instructions</p>
         </div>
-        <button class="btn btn-secondary" data-target="#@(t.Name)" data-toggle="collapse">Use This Tool</button>
+        <div class="card-footer">
+            @Html.ActionLink("Use This Tool", t.ViewName, "Toolkit")
+        </div>
     </div>
-    @Html.Partial(@t.PartialViewName, new ViewDataDictionary { { "t", t } })
 }
 
 
