@@ -12,5 +12,6 @@ namespace OATools.ViewModel
         public IEnumerable<Tradition> Traditions { get; set; }
         public IEnumerable<Promise> Promises { get; set; }
         public IEnumerable<Principle> Principles { get; set; }
+        public IEnumerable<Tool> Tools { get; set; }
     }
 }

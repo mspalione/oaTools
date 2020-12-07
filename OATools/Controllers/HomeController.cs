@@ -30,7 +30,8 @@ namespace OATools.Controllers
                 Steps = _context.Steps.ToList(),
                 Traditions = _context.Traditions.ToList(),
                 Promises = _context.Promises.ToList(),
-                Principles = _context.Principles.ToList()
+                Principles = _context.Principles.ToList(),
+                Tools = _context.Tools.ToList()
             };
 
             return View(model);

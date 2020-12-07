@@ -3,8 +3,7 @@
     public class Tool
     {
         public int Id { get; set; }
-        public Program Program { get; set; }
-        public byte ProgramId { get; set; }
         public string ToolText { get; set; }
+        public string ToolSummary { get; set; }
     }
 }

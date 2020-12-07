@@ -39,6 +39,12 @@ textarea {
     padding: 10px;
 }
 
+.sloganHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
 /*
     https://color.adobe.com/create/color-wheel
     compound first color

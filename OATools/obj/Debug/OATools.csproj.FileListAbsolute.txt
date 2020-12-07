@@ -210,3 +210,11 @@ C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.MoreDat
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.Gratitudes.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.GratitudesDateColumn.resources
 C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.UpdateSloganModel.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.UpdateToolModel.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.RemoveToolsColumn.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedToolDb.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.AddPrayer.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.TimedBitchLetters.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.ToolkitModel.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.UpdateToolkit.resources
+C:\Users\melis\source\repos\oaTools\OATools\obj\Debug\OATools.Migrations.SeedToolkit.resources

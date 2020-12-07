@@ -32,6 +32,8 @@ namespace OATools.Models
         public DbSet<Principle> Principles { get; set; }
         public DbSet<NeutralResponse> NeutralResponses { get; set; }
         public DbSet<Gratitude> Gratitudes { get; set; }
+        public DbSet<TimedBitchLetter> TimedBitchLetters { get; set; }
+        public DbSet<Toolkit> Toolkit { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -24,7 +24,7 @@ namespace OATools
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-flatly.css",
                       "~/content/datatables/css/datatables.bootstrap4.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }
